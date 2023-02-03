@@ -1,0 +1,14 @@
+.container {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navlinks {
+    display: flex;
+}
+
+.navlinks h3 {
+    margin-top: 0;
+    margin-left: 25px;
+}
