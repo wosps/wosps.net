@@ -1,0 +1,27 @@
+.container {
+    border-radius: 11px;
+    background-color: #FAFEFF;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin-bottom: 25px;
+    display: flex;
+    padding: 20px 20px;
+}
+
+.project-left {
+    width: 75%;
+}
+
+.project-right h3, .project-right p {
+    margin: 0;
+    line-height: 25px;
+}
+
+.project-right h3 {
+    padding-bottom: 10px;
+    border-bottom: #c3cacc solid 1px;
+}
+
+.project-right p {
+    margin-top: 10px;
+}

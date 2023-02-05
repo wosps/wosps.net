@@ -3,11 +3,11 @@ import styles from '../styles/Navigation.module.css'
 
 export default function Navigation() {
   return (
-    <nav class={styles.container}>
+    <nav className={styles.container}>
       <div>
-        <Image src="/logo.png" width="40" height="40"/>
+        <Image src="/logo.png" width="40" height="40" alt='Logo'/>
       </div>
-      <div class={styles.navlinks}>
+      <div className={styles.navlinks}>
         <h3>Profile</h3>
         <h3>Work</h3>
         <h3>Contact</h3>

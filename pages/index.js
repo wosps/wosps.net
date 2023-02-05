@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Index.module.css'
 import Navigation from '../components/Navigation'
 import Hero from '../components/Hero'
+import SelectedWork from '../components/SelectedWork'
 
 export default function Home() {
   return (
@@ -13,9 +14,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main class={styles.container}>
+      <main className={styles.container}>
         <Navigation />
         <Hero />
+        <SelectedWork />
       </main>
     </>
   )
