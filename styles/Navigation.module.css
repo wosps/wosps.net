@@ -8,7 +8,12 @@
     display: flex;
 }
 
-.navlinks h3 {
+.navlinks h2 {
     margin-top: 0;
     margin-left: 25px;
+    cursor: pointer;
+}
+
+.navlinks h2:hover {
+    text-decoration: underline;
 }

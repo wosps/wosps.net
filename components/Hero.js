@@ -5,9 +5,9 @@ import styles from '../styles/Hero.module.css'
 export default function Hero() {
   return (
     <div className={styles.container}>
-      <h3 className={styles.heading}>Hello, I&apos;m</h3>
+      <h2 className={styles.heading}>Hello, I&apos;m</h2>
       <h1 className={styles.heading}>Jordan Blewer</h1>
-      <p>a web developer with a passion for building elegant user experiences.</p>
+      <h3>a web developer with a passion for building elegant user experiences.</h3>
       <div className={styles["link-container"]}>
       <div className={styles.link}>
         <a><TbArrowUpRight /><p>Twitter</p></a>

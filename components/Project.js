@@ -1,15 +1,28 @@
 import Image from 'next/image'
 import styles from '../styles/Project.module.css'
+import { TbArrowUpRight } from "react-icons/tb";
 
-export default function Project() {
+export default function Project(props) {
   return (
     <div className={styles.container}>
-      <div className={styles["project-left"]}>  
-        <h1>test</h1>
+      <div className={styles["section-left"]}>  
+        <h1>Image</h1>
       </div>
-      <div className={styles["project-right"]}>  
-        <h3>Vinter Map</h3>
-        <p>An interactive web map built using Leaflet.js for the video-game ‘Longvinter’.</p>
+      <div className={styles["section-right"]}> 
+        <div className={styles["project-text"]}>
+          <h3>{props.title}</h3>
+          <p>{props.summary}</p>
+        </div>
+        <div className={styles["project-links"]}>
+          <a className={styles.link}>
+            <TbArrowUpRight className={styles.icon} />
+            <p>Learn More</p>
+          </a>
+          <a className={styles.link}>
+            <TbArrowUpRight className={styles.icon} />
+            <p>Visit Site</p>
+          </a>
+        </div>
       </div>
     </div>
   )

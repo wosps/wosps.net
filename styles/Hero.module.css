@@ -4,13 +4,14 @@
     border-bottom: #c3cacc solid 1px;
 }
 
-.container p {
+.container h3 {
     line-height: 20px;
-    margin-top: 0;
+    margin-top: 10px;
+    width: 60%;
 }
 
 .heading {
-    margin-block: 0;
+    margin-block: -10px;
 }
 
 .link-container {
