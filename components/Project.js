@@ -6,7 +6,7 @@ export default function Project(props) {
   return (
     <div className={styles.container}>
       <div className={styles["section-left"]}>  
-        <Image src={props.img} width="300" height="100" className={styles.cover}/>
+        <Image src={props.img} width="300" height="100" alt='Decorative image showcasing the project.' className={styles.cover}/>
       </div>
       <div className={styles["section-right"]}> 
         <div className={styles["project-text"]}>
