@@ -17,3 +17,7 @@
 .navlinks h2:hover {
     text-decoration: underline;
 }
+
+.link {
+    color: black;
+}
