@@ -9,9 +9,9 @@ export default function Navigation() {
         <Link href='/'><Image src="/logo.png" min-width="30" width="30" height="30" alt='Logo'/></Link>
       </div>
       <div className={styles.navlinks}>
-        <h2>Profile</h2>
+        <Link className={styles.link} href="/profile"><h2>Profile</h2></Link>
         <Link className={styles.link} href="/work"><h2>Work</h2></Link>
-        <h2>Contact</h2>
+        <Link className={styles.link} href="/contact"><h2>Contact</h2></Link>
       </div>
     </nav>
   )

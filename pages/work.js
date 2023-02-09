@@ -1,11 +1,33 @@
 import Head from 'next/head'
-import Link from 'next/link'
+import fs from 'fs'
+import matter from 'gray-matter'
+
 import styles from '../styles/Index.module.css'
 import Navigation from '../components/Navigation'
 import Hero from '../components/Hero'
 import LatestWork from '../components/LatestWork'
+import Project from '../components/Project'
 
-export default function Work() {
+export async function getStaticProps() {
+  const files = fs.readdirSync('posts')
+  const posts = files.map((fileName) => {
+    const slug = fileName.replace('.md', '');
+    const readFile = fs.readFileSync(`posts/${fileName}`, 'utf-8');
+    const { data: frontmatter } = matter(readFile);
+
+    return {
+      slug,
+      frontmatter,
+    };
+});
+
+return {
+    props: {
+      posts,
+    },
+}};
+
+export default function Work({posts}) {
   return (
     <>
       <Head>
@@ -18,6 +40,9 @@ export default function Work() {
         <Navigation />
         <Hero />
         <LatestWork />
+        {posts?.map(({slug, frontmatter}) => (
+          <Project key={slug} title={frontmatter.title} summary={frontmatter.subtitle}/>
+        ))}
       </main>
     </>
   )
