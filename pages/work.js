@@ -41,7 +41,7 @@ export default function Work({posts}) {
         <Hero />
         <LatestWork />
         {posts?.map(({slug, frontmatter}) => (
-          <Project key={slug} title={frontmatter.title} summary={frontmatter.subtitle}/>
+          <Project key={slug} slug={slug} title={frontmatter.title} summary={frontmatter.summary} img={frontmatter.img}/>
         ))}
       </main>
     </>
