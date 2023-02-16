@@ -15,10 +15,10 @@ export default function Project(props) {
           <p>{props.summary}</p>
         </div>
         <div className={styles["project-links"]}>
-          <a className={styles.link}>
+          <Link href={`post/${props.slug}`} className={styles.link}>
             <TbArrowUpRight className={styles.icon} />
-            <Link href={`post/${props.slug}`}><p>Learn More</p></Link>
-          </a>
+            <p>Learn More</p>
+          </Link>
           <a className={styles.link}>
             <TbArrowUpRight className={styles.icon} />
             <p>Visit Site</p>
