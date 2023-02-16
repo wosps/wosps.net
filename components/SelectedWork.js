@@ -12,8 +12,8 @@ export default function SelectedWork() {
         <Link className={styles.flex+ ' ' + styles.link} href='/work'><h3>View More</h3>
           <TbArrowRight className={styles.icon} /></Link>
       </div>
-        <Project title="VinterMap" summary="An interactive web map built using Leaflet.js for the video-game ‘Longvinter’." img="/vintermap.png" />
-        <Project title="Tagger for Letterboxd" summary="A browser extension that adds further functionality to ‘Letterboxd’ via my backend server and the tMDB API." img="/tagger.png" />
+        <Project title="VinterMap" summary="An interactive web map built using Leaflet.js for the video-game ‘Longvinter’." img="/vintermap.png" link="https://vintermap.co" slug='vintermap'/>
+        <Project title="Tagger for Letterboxd" summary="A web extension allowing users to automate the process of tagging films on Letterboxd." img="/tagger.png" />
         <Project title="Colour Picker" summary="An interactive colour picker built using vanilla JavaScript and TheColorAPI." img="/colour.png" />
     </section>
   )

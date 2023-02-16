@@ -3,3 +3,34 @@
     max-width: 540px;
     margin: 0 auto;
 }
+
+.heading {
+    font-weight: 700;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    margin-top: 2px;
+    margin-left: 5px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    display: flex; 
+    align-items: center;
+    text-decoration: none;
+    color: #494949;
+    margin-right: 10px;
+}
+
+.link:hover {
+    text-decoration: none;
+}
