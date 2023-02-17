@@ -1,14 +1,17 @@
-import fs from 'fs'
-import matter from 'gray-matter'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
+
 import styles from '../../styles/Index.module.css'
 import Navigation from '../../components/Navigation'
 import Hero from '../../components/Hero'
 
+import fs from 'fs'
+import matter from 'gray-matter'
 import md from 'markdown-it'
 import { TbArrowLeft } from 'react-icons/tb'
+
 
 export async function getStaticPaths(){
     const files = fs.readdirSync('posts')
@@ -36,9 +39,8 @@ export async function getStaticProps({ params: { slug} }) {
 }
 
 export default function PostPage({ frontmatter, content }) {
-
-    console.log(frontmatter.title)
     const title = `Jordan Blewer / ${frontmatter.title}`
+    const Router = useRouter()
     return (
         <>
             <Head>
@@ -47,20 +49,14 @@ export default function PostPage({ frontmatter, content }) {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/logo.png" />
             </Head>
-            <main>
-                <div className={styles.container}>
-                <Navigation />
-                <Hero />
-                    <div>
-                    <div className={styles.header}>
-                        <h2 className={styles.heading}>{frontmatter.title}</h2>
-                        <Link className={styles.flex+ ' ' + styles.link} href='/work'><TbArrowLeft className={styles.icon} />
-                        <h3>Go Back</h3></Link>
-                    </div>
-                        <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
-                    </div>
-                </div>
-            </main>
+                        <div>
+                            <div className={styles.header}>
+                                <h2 className={styles.heading}>{frontmatter.title}</h2>
+                                <a className={styles.flex+ ' ' + styles.link} onClick={() => Router.back()}><TbArrowLeft className={styles.icon} />
+                                <h3>Go Back</h3></a>
+                            </div>
+                            <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
+                        </div>
         </>
     )
 }
