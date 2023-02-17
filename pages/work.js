@@ -36,14 +36,10 @@ export default function Work({posts}) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.png" />
       </Head>
-      <main className={styles.container}>
-        <Navigation />
-        <Hero />
-        <LatestWork />
-        {posts?.map(({slug, frontmatter}) => (
-          <Project key={slug} slug={slug} title={frontmatter.title} summary={frontmatter.summary} img={frontmatter.img}/>
-        ))}
-      </main>
+      <LatestWork />
+      {posts?.map(({slug, frontmatter}) => (
+        <Project key={slug} slug={slug} title={frontmatter.title} summary={frontmatter.summary} img={frontmatter.img}/>
+      ))}
     </>
   )
 }
