@@ -7,7 +7,7 @@ export default function ProfileMain() {
       <div className={styles.header}>
         <h2 className={styles.heading}>About Me...</h2>
       </div>
-      <p>Hello, I'm Jordan! I'm a self-taught frontend developer from Essex, England.</p>
+      <p>Hello, I&apos;m Jordan! I&apos;m a self-taught frontend developer from Essex, England.</p>
     </section>
   )
 }
