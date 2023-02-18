@@ -1,5 +1,6 @@
 import Navigation from './Navigation'
 import Hero from './Hero'
+import Footer from './Footer'
 
 import styles from '../styles/Layout.module.css'
 
@@ -9,6 +10,7 @@ export default function Layout({ children }) {
             <Navigation /> 
             <Hero/>
             <main>{children}</main>
+            <Footer />
         </div>
     )
 }
