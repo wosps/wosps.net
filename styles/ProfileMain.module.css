@@ -1,26 +1,43 @@
-.skills {
+.maincontain {
     display: flex;
-    gap: 20px;
-    justify-content: space-around;
+    align-items: center;
 }
 
-.skill .col {
+.maincontain p {
+    flex: 75%;
+}
+
+.img {
+    opacity: 100%;
+}
+
+.skills {
     width: 100%;
+    margin-bottom: 25px;
 }
 
-.skills .col ul li {
-    list-style: none;
-    /* margin: 0; */
+.row {
+    display: flex;
+    gap: 5px;
+}
+
+.skill {
+    flex: 50%;
     border: #c3cacc solid 1px;
+    background-color: #f4fcff;
     border-radius: 5px;
-    /* padding: 0 50px; */
-    padding: 5px 0 5px 10px; 
-    width: 250px;
-    text-align: left;
-    margin-bottom: 10px;
+    padding: 5px 0 5px 10px;
+    margin-bottom: 5px;
+    transition: scale 0.1s;
 }
 
-.skills .col ul {
-    padding: 0;
-    margin: 0;
+.skill:hover {
+    scale: 1.05;
 }
+
+@media (max-width: 430px) {
+    .img {
+        display: none;
+    }
+    /* … */
+  }

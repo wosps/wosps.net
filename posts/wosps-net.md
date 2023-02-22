@@ -1,7 +1,7 @@
 ---
 title: "Personal Portfolio"
 summary: "This website! A portfolio of my work and a place to write about it."
-img: "/.png"
+img: "/portfolio.png"
 ---
 Lorem markdownum terrae rigidum socium, alta indoluit ingenti mandato illi
 guttae intima mirantur. Colla se est removebitur hanc procerum namque

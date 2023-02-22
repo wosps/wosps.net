@@ -10,7 +10,7 @@ export default function Hero() {
       <h3>a web developer with a passion for building elegant user experiences.</h3>
       <div className={styles["link-container"]}>
       <div className={styles.link}>
-        <a href='https://twitter.com/wosps'target='_blank' rel='noreferrer'><TbArrowUpRight /><p>Twitter</p></a>
+        <a href='https://linkedin.com/jordnb'target='_blank' rel='noreferrer'><TbArrowUpRight /><p>LinkedIn</p></a>
       </div>
       <div className={styles.link}>
       <a href='https://github.com/wosps'target='_blank' rel='noreferrer'><TbArrowUpRight /><p>GitHub</p></a>

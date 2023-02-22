@@ -13,8 +13,8 @@ export default function SelectedWork() {
           <TbArrowRight className={styles.icon} /></Link>
       </div>
         <Project title="VinterMap" summary="An interactive web map built using Leaflet.js for the video-game ‘Longvinter’." img="/vintermap.png" link="https://vintermap.co" slug='vintermap'/>
-        <Project title="Tagger for Letterboxd" summary="A web extension allowing users to automate the process of tagging films on Letterboxd." img="/tagger.png" />
-        <Project title="Colour Picker" summary="An interactive colour picker built using vanilla JavaScript and TheColorAPI." img="/colour.png" />
+        <Project title="Tagger for Letterboxd" summary="A web extension allowing users to automate the process of tagging films on Letterboxd." img="/tagger.png" link="https://chrome.google.com/webstore/detail/tagger-for-letterboxd/pbjbeepjhedfccldgdfcjaagimndlema?hl=en-GB" slug="tagger"/>
+        <Project title="Colour Picker" summary="An interactive colour picker built using vanilla JavaScript and TheColorAPI." img="/colour.png" slug="colour-picker" />
     </section>
   )
 }
