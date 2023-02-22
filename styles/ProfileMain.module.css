@@ -1,0 +1,26 @@
+.skills {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.skill .col {
+    width: 100%;
+}
+
+.skills .col ul li {
+    list-style: none;
+    /* margin: 0; */
+    border: #c3cacc solid 1px;
+    border-radius: 5px;
+    /* padding: 0 50px; */
+    padding: 5px 0 5px 10px; 
+    width: 250px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.skills .col ul {
+    padding: 0;
+    margin: 0;
+}

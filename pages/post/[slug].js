@@ -51,9 +51,9 @@ export default function PostPage({ frontmatter, content }) {
             </Head>
                         <div>
                             <div className={styles.header}>
-                                <h2 className={styles.heading}>{frontmatter.title}</h2>
+                                <h3 className={styles.heading}>{frontmatter.title}</h3>
                                 <a className={styles.flex+ ' ' + styles.link} onClick={() => Router.back()}><TbArrowLeft className={styles.icon} />
-                                <h3>Go Back</h3></a>
+                                <p>Go Back</p></a>
                             </div>
                             <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
                         </div>

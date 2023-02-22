@@ -9,7 +9,7 @@ export default function LatestWork(props) {
   return (
     <section>
       <div className={styles.header}>
-        <h2 className={styles.heading}>Latest Work</h2>
+        <h3 className={styles.heading}>Latest Work</h3>
       </div>
         {/* <Project title="VinterMap" summary="An interactive web map built using Leaflet.js for the video-game ‘Longvinter’." img="/vintermap.png" /> */}
     </section>

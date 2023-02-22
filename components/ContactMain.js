@@ -9,7 +9,7 @@ export default function ContactMain() {
   return (
     <section>
       <div className={styles.header}>
-        <h2 className={styles.heading}>Contact Me!</h2>
+        <h3 className={styles.heading}>Contact Me!</h3>
       </div>
       <div className={local.main}>
         <p>Thanks for checking out my portfolio! I’m actively looking for new roles and projects, so feel free to reach out via one of the below options...</p>

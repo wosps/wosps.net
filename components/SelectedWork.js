@@ -8,8 +8,8 @@ export default function SelectedWork() {
   return (
     <section>
       <div className={styles.header}>
-        <h2 className={styles.heading}>Selected Work</h2>
-        <Link className={styles.flex+ ' ' + styles.link} href='/work'><h3>View More</h3>
+        <h3 className={styles.heading}>Selected Work</h3>
+        <Link className={styles.flex+ ' ' + styles.link} href='/work'><p>View More</p>
           <TbArrowRight className={styles.icon} /></Link>
       </div>
         <Project title="VinterMap" summary="An interactive web map built using Leaflet.js for the video-game ‘Longvinter’." img="/vintermap.png" link="https://vintermap.co" slug='vintermap'/>
