@@ -3,43 +3,26 @@ title: "VinterMap"
 summary: "An interactive web map built using Leaflet.js for the video-game ‘Longvinter’."
 img: "/vintermap.png"
 ---
-Lorem markdownum instimulat partim silva, lacrimis sic: aeterna **tale**.
-Inferias lingua, traxit ab Antenora Martius Peneide. Summaque et secus.
+'Vinter Map' is an interactive web map built using Leaflet.js for the video-game ‘Longvinter’. It's used to display the locations of the game's various locations and items to help players navigate the game world and complete objectives.
 
-Viae ardor tenebat tremulis adde sagittae obsessa cognataque equo trahit
-manibus, cesserat sensi, quoque. Tela silvae: ore Venus huic bisque ferrumque
-sanguine, holus. Ille corporis tanta, missum, at loca demittere suspiria vestros
-fecundique imitante nec.
+**What problem did I set out to fix?**
 
-Adclivis [aggere versata enim](#ignoro-non-flammis) nostris regnis! Superos mihi
-genitor *mihi tegumenque* est iamdudum recto Persephonen carpis, oscula Oceanus
-staret. Lacesse moribundo *intenta*, ego in tollebat amores. Ut antro cornum,
-hiemsque morte equorum moderamina confessus tangendo maioris Latreus per norat
-duraeque pietas pinnis, es. Donis spectabat gemitum vincta?
+'Longvinter' is an early-access video-game with a growing community and, as such, the information available online is very limited. The project began after I saw a group of users in the game's Discord server using a static image of the map to find in-game items. As the game doesn't include a map, the community had created a few image guides to locate items and navigate the world. This was a good start, but I wanted to create something more interactive and user-friendly.
 
-Arcus fuerat quoque porrigit *et inanes* quondam murmura sua censuque inani
-miserabilis. Pyraethi vobis ducibusque gerens volucresque novum; ne frustra
-*corporis places*, sub totoque Rhoeti, et? Aversa pharetramque Liber Semeles
-latus mollem glomerata numina stamina patior pecoris fessamque *mihi*.
+**How did I build it?**
 
-Ortus maturus. Pro est per arce tristis, oportuit est nuper, tauri illuc alite
-est oblita cursus.
+I started by reading up and learning more about Leaflet.js. Whilst this was my first time using the library, there were a few resources online that helped me get started. Longvinter's community were kind enough to provide me with an high-resolution image of the map and a folder of icons for the various items in the game. I used Photoshop to slice the image into tiles of variable zoom levels and used the icons to create a JSON file containing the coordinates of each item. I then used the Leaflet.js API to create a web map and add the tiles and markers to the map.
 
-*Iove* hac pietas pomis erat miserrima puerpera dum placidos annos hostisque
-auras mediis! Floresque sed voluptas sequitur, patuisset nocuisse: erant mater.
+The UI was built using HTML and CSS, with added interactivity using JavaScript. I made each button toggle a different icon layer on the map, allowing users to switch between the different items types they were looking to find. Using JavaScript and CSS, I also added information about each item which appears when the user hovers over the marker.
 
-Ignoscere *vultum magna*. Est Iovis, et meritis, suffuderat armet tumidum de
-ipso facta luctatur abest; nec positis. Pereo laeta hic contremuit sibi. Pendens
-valuit fugit, guttur quamvis fama, coniugiumne ausa effundite, vulnere.
+**What was the most challenging part of the project?**
 
-Concordes loricaeque dixi est obvia rata clausa hospita tanto prensam tu animi
-sanguine terris. Ardent spem institerat domo: verba hoc et notavi turpe potius
-restare est Iovem unus daret dextera hospitibus solet illa. Iugales tamen nota
-obrue in alto, cum hostis vitae quod dixit est iam inseruitque, an. Manus nos
-cum appellat tempus exercent probavit, domum, valuere amens vestis alto. Faciat
-qui Herculis solet et illo et bellum ense medio interea est volucrum hanc
-spectes?
+The most challenging part of the project was deciding the best way to store the data for each item. I was initially storing each instance of an icon as a seperate array, containing the name, icon and coordinates of that instance. However, this meant I had a lot duplicate information and I had to write a lot of repetitive code to add each item to the map. I solved this by creating an array of objects which each stored one item, it's icon and every set of coordinates for that item. This meant I could loop through the array and add each item to the map with a single line of code.
 
-Sum non manibus cinis. Vir vota membra vi agitata iam petit puer nympha
-circinat. Videri in non Trachinius heros ubi
-[fallere](#victricia-carissima-tenuere), accipit adfusique
+**What did I learn?**
+
+Creating Vinter Map taught me a lot about Leaflet.js and, while it may not be something I use often, the learning process was very rewarding. I also learnt about different ways to store data and how each method can be used to solve different problems.
+
+**What will I do differently next time?**
+
+If I were to start this project again, I would make use of a framework such as React.js to create the UI. I would also make use of a database to store the data for each item, as this would make it easier to add new items and update the map in the future.

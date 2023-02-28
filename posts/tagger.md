@@ -3,37 +3,26 @@ title: "Tagger for Letterboxd"
 summary: "A web extension allowing users to automate the process of tagging films on Letterboxd."
 img: "/tagger.png"
 ---
-Lorem markdownum volentem tollit Cadmeida perlucentes vultus; coniuge dubitant
-licet, vidit sucus timeas collo arti, fugiens. Fretumque fatebitur Ammon imis
-**myrteta ipsa** quamquam. Haec usum alitibus ignorantia vovistis. Duo non, cava
-formae corpus laetum, cum, mox qua at habet. Quo huic tunc lupi sed praesagaque
-domum scitantibus certamina sint desinat victa: quem quam pariter *demunt* ab,
-infantem.
+'Tagger for Letterboxd' is a web extension that allows users to automate the process of tagging films on Letterboxd. It is available for Google Chrome.
 
-Falsi est est notavit haesisse sustinet vapore radicibus Semiramis **somnus**.
-Forte quoque lacrimaeque namque putaret, sentit et, coniugis. Densas
-Liberfemineae subiecta in moriens breve! Pater dominae, vertice volucrum augur
-tributum quod vincere dum corpora magni bis; Iove.
+**What problem did I set out to fix?**
 
-*Curam reserata*, armigerae vidit incitat, tenuere extensus certatim superabat
-et nisi plangoris lenimen sumptis. Est decoris vitam **proelia**, Oceano iter
-peteret intrat: ego quibus ratem fidissime adiit: dotibus, vaticinor Samius.
-Duce vulnere simulatas vade inplicat, in sive! Pectore solae ait poteras. Dantem
-mora Byblida illa sustinet, tum non ibat adest si ubera aranea lustrantem ut aut
-mos, in quam.
+Letterboxd is a social network for film lovers and it allows you to write reviews and tag them with keywords. Some users, including myself, tag their reviews with the films genre. However, this can be a time consuming process. I wanted to create a tool that would allow me to tag my reviews with the films genre automatically.
 
-Cruoris Oenopiis Oete ibat ramos aequora illo *paene* orbus spoliis, iam. Ille
-ora Ityosque rauco. Mulcebunt tamen, et exire qua tibi patet ignem nescia enim
-iteratque ignes praerupit litore.
+**How did I build it?**
 
-Fata verba caput Solis et per tenui illo populis tum medius aede iurasse et quae
-certamine! Poenas omni latissima ultor animalia statque, caelo Cerastae suas
-**me pastor** vasti!
+This project consisted of two parts - a web extension and a backend server to communicate with the TMDb API. I built the web extension using JavaScript and the backend server using Node.js and Express.
 
-Piae manu se *maesta ilia*, Quinque vertice? Undis cernentem longa tota erant
-alieni, *spernit iamque in* non! Si **auctoris erat**. Filia precor ames
-interdum vultusque soceri silvis victoria tenui perpetuum devolvere.
+As this was one of my first projects fetching data from an API, I had to learn how RESTful requests worked. Once I had a firm grasp on this, I read through the TMDb API documentation and started work on the extension. The extension used the Chrome API to interact with the DOM and add a button to the review page. I made sure the button used the same CSS as the other buttons native to the website. Once the button was clicked, the extension would scrape the film title from the page and send a request to the backend server. The backend server then sent a request to the TMDb API and returned the film's genre IDs to the extension, which matched the IDs to genre strings and added them to the review.
 
-Pelasgi cognata dulcedine vetustos Iunonia ictus ab tabuerint Troum data, hoc et
-parte frigore caelo et! Nuper tela, et cum, vacuus nigrae tepidique scinditur
-potuit.
+**What was the most challenging part of the project?**
+
+Whilst developing the extension, I learnt I had to hide my API key from the public. This was a challenge as I had to find a way for my extension to communicate with the TMDb API without exposing my key. I solved this by creating a backend server that would act as a middleman between the extension and the API. This meant I could hide my API key on the server and only expose the server to the public.
+
+**What did I learn?**
+
+I learnt how to make API requests and how to use the Chrome API to interact with the DOM. I also learnt how to use the Express framework to create a backend server. The backend server was a new concept to me and meant I also had to learn about DigitalOcean and how to deploy a Node.js application on a VPS droplet.
+
+**What will I do differently next time?**
+
+As this was my first 'big' project, I've since learnt a lot more about web development and how to structure my code. If I were to start the project again, I would ensure my code was more streamlined and ensure I made better use of functions to avoid repetative code.
