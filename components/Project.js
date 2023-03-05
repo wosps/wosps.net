@@ -19,7 +19,7 @@ export default function Project(props) {
             <TbArrowUpRight className={styles.icon} />
             <p>Learn More</p>
           </Link>
-          <a href={props.link} className={styles.link}>
+          <a href={props.link} className={styles.link} target='_blank' rel='noreferrer'>
             <TbArrowUpRight className={styles.icon} />
             <p>Visit Site</p>
           </a>
