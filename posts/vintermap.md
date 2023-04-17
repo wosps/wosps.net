@@ -1,9 +1,11 @@
 ---
 title: "Vinter Map"
 summary: "An interactive web map built using Leaflet.js for the video-game ‘Longvinter’."
+date: "2023-01-03"
+link: "https://vintermap.co"
 img: "/vintermap.png"
 ---
-'Vinter Map' is an interactive web map built using Leaflet.js for the video-game ‘Longvinter’. It's used to display the locations of the game's various locations and items to help players navigate the game world and complete objectives.
+'Vinter Map' is an interactive web map built using Leaflet.js for the video-game ‘Longvinter’. It's used to display the locations of the game's various locations and items to help players navigate the game world and complete objectives. It is available at [vintermap.co](https://vintermap.co/) and the source code is available on [my GitHub](https://github.com/wosps/vintermap).
 
 **What problem did I set out to fix?**
 

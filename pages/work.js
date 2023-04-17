@@ -28,6 +28,11 @@ return {
 }};
 
 export default function Work({posts}) {
+
+  posts.sort((a, b) => {
+    return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
+  });
+
   return (
     <>
       <Head>
@@ -38,7 +43,7 @@ export default function Work({posts}) {
       </Head>
       <LatestWork />
       {posts?.map(({slug, frontmatter}) => (
-        <Project key={slug} slug={slug} title={frontmatter.title} summary={frontmatter.summary} img={frontmatter.img}/>
+        <Project key={slug} slug={slug} title={frontmatter.title} summary={frontmatter.summary} img={frontmatter.img} link={frontmatter.link}/>
       ))}
     </>
   )

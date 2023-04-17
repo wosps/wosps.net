@@ -1,9 +1,11 @@
 ---
 title: "Tagger for Letterboxd"
 summary: "A web extension allowing users to automate the process of tagging films on Letterboxd."
+date: "2023-01-01"
+link: "https://chrome.google.com/webstore/detail/tagger-for-letterboxd/pbjbeepjhedfccldgdfcjaagimndlema?hl=en-GB"
 img: "/tagger.png"
 ---
-'Tagger for Letterboxd' is a web extension that allows users to automate the process of tagging films on Letterboxd. It is available for Google Chrome.
+'Tagger for Letterboxd' is a web extension that allows users to automate the process of tagging films on Letterboxd. It is available for Google Chrome on the [Chrome Web Store](https://chrome.google.com/webstore/detail/tagger-for-letterboxd/pbjbeepjhedfccldgdfcjaagimndlema?hl=en-GB).
 
 **What problem did I set out to fix?**
 
