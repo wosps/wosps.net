@@ -1,7 +1,4 @@
 import Head from 'next/head'
-import styles from '../styles/Index.module.css'
-import Navigation from '../components/Navigation'
-import Hero from '../components/Hero'
 import SelectedWork from '../components/SelectedWork'
 
 export default function Home() {

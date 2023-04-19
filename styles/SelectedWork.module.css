@@ -19,8 +19,13 @@
 
 .link {
     color: black;
+    text-decoration: none;
+}
+
+.link:hover{
+    text-decoration: none;
 }
 
 .profilecontent p {
     margin-top: 0;
-}
+} 
