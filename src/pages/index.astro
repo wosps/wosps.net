@@ -12,14 +12,16 @@ import PinnedRepos from "@components/Project/PinnedRepos.astro"
 	<BaseHead title="home" description="random projects and ramblings."/>
 	<MainLayout>
 		<!-- TODO: Banner highlighting launch and link to blog post about switching to Astro.  -->
-		<div class="border-b border-zinc-800">
+		<section class="border-b border-zinc-800">
 			<h3 class="font-medium mb-2">What do you do?</h3>
 			<p class="mb-2">I create web apps! Lately I've been focusing on
 			learning the <span class="text-sky-300">T3 Stack</span> as well as dabbling
 			in <span class="text-sky-300">Astro</span>.</p>
 			<p class="mb-2">I've made projects with multiple frameworks and libraries, including <span class="text-sky-300">React</span>, <span class="text-sky-300">Leaflet</span>, <span class="text-sky-300">another else</span> and <span class="text-sky-300">something else</span> again!</p>
 			<p class="mb-5">Check out some of my pinned work below or <span class="text-sky-300">click here</span> to view it all. I also have a <a href="/blog" class="text-sky-300">blog</a> where you can read my tech ramblings.</p>
-		</div>
+		</section>
+		<section class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-2 pb-3">
 		<PinnedRepos />
+		</section>
 	</MainLayout>
 </html>
