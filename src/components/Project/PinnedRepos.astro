@@ -1,0 +1,32 @@
+--- 
+
+import { GITHUB_USER } from "../../config"
+import ProjectBox from "./ProjectBox.astro";
+
+type PinnedRepo = {
+    repo: string;
+    owner: string;
+    description: string;
+    link: string;
+    stars: number;
+    language: string; 
+}
+
+// This will grab a list of your pinned GitHub repos. Make sure to change your username in the config file!
+const repoArr = await fetch(
+    `https://gh-pinned-repos.egoist.dev/?username=${GITHUB_USER}`
+    ).then(
+        async (res) => {
+        return (await res.json()) as PinnedRepo[];
+    });
+
+---
+
+<!-- Create a ProjectBox element for every repo returned in the above fetch query. -->
+{
+    repoArr.map((repo) => {
+        return(
+           <ProjectBox name={repo.repo} description={repo.description} stars={repo.stars} language={repo.language} url={repo.link}/>
+        )
+    })
+}

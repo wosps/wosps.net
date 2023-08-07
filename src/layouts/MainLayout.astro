@@ -1,0 +1,23 @@
+---
+import '@fontsource/poppins';
+import Footer from '@components/Footer.astro';
+import Nav from '@components/Nav.astro';
+const { title } = Astro.props
+---
+
+<body class="bg-zinc-900 text-slate-200">
+    <Nav />
+        <div class="container mx-auto px-3 md:max-w-3xl">
+            <main>
+                    <div class="text-center mt-6 mb-3">
+                        <div class="font-black mb-3">
+                            <h2>Hello, I'm</h2>
+                            <h1>Jordan</h1>
+                        </div>
+                        <p class="text-base border-b border-zinc-800 pb-3">A 25-year-old, self-taught developer with a passion for interactive experiences.</p>
+                    </div>
+                    <slot />
+            </main>
+            <Footer />
+        </div>
+</body>
